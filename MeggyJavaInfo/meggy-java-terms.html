@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<TITLE>Terminals for MeggyJava</TITLE>
+
+
+</head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#0000EE">
+<H1 ALIGN=CENTER>Terminals for MeggyJava</H1>
+<center>
+<table border=1>
+  <tr align=center> <td><b>Lexeme</b></td><td><b>Token</b></td><td><b>Value</b></td></tr>
+  <tr> <td colspan=3 align=center><b>Specials</b></td></tr>
+  <tr> <td> <pre>"+"</pre> </td><td>TokenPlus </td><td>  </td></tr>
+  <tr> <td> <pre>"-"</pre> </td><td>TokenMinus </td><td>   </td></tr>
+  <tr> <td> <pre>"*"</pre> </td><td>TokenTimes </td><td>   </td></tr>
+  <tr> <td> <pre>"("</pre> </td><td>TokenLParen  </td><td>   </td></tr>
+  <tr> <td> <pre>")"</pre> </td><td>TokenRParen  </td><td>   </td></tr>
+  <tr> <td> <pre>"="</pre> </td><td>TokenAssign  </td><td>   </td></tr>
+  <tr> <td> <pre>"{"</pre> </td><td>TokenLBrace  </td><td>   </td></tr>
+  <tr> <td> <pre>"}"</pre> </td><td>TokenRBrace  </td><td>   </td></tr>
+  <tr> <td> <pre>";"</pre> </td><td>TokenSemi  </td><td>   </td></tr>
+  <tr> <td> <pre>"=="</pre> </td><td>TokenEqual  </td><td>   </td></tr>
+  <tr> <td> <pre>"&amp;&amp;"</pre> </td><td>TokenAnd  </td><td>   </td></tr>
+  <tr> <td> <pre>"&lt;"</pre> </td><td>TokenLT  </td><td>   </td></tr>
+  <tr> <td> <pre>"!"</pre> </td><td>TokenNot </td><td>   </td></tr>
+  <tr> <td> <pre>","</pre> </td><td>TokenComma </td><td>   </td></tr>
+  <tr> <td> <pre>"["</pre> </td><td>TokenLBracket </td><td>   </td></tr>
+  <tr> <td> <pre>"]"</pre> </td><td>TokenRBracket </td><td>   </td></tr>
+  <tr> <td> <pre>"."</pre> </td><td>TokenDot </td><td>   </td></tr>
+
+  <tr> <td colspan=3 align=center><b>Reserved Words</b></td></tr>
+
+  <tr> <td> <pre>"main"</pre> </td><td>		TokenMainkw</td><td>   </td></tr>
+  <tr> <td> <pre>"boolean"</pre> </td><td>      TokenBooleankw</td><td>   </td></tr>
+  <tr> <td> <pre>"int"</pre> </td><td>          TokenIntkw </td><td>   </td></tr>
+  <tr> <td> <pre>"byte"</pre> </td><td>         TokenBytekw </td><td>   </td></tr>
+  <tr> <td> <pre>"false"</pre> </td><td>        TokenFalsekw </td><td>0 </td></tr>
+  <tr> <td> <pre>"if"</pre> </td><td>           TokenIfkw </td><td>   </td></tr>
+  <tr> <td> <pre>"else"</pre> </td><td>         TokenElsekw </td><td>   </td></tr>
+  <tr> <td> <pre>"true"</pre> </td><td>         TokenTruekw </td><td>1 </td></tr>
+  <tr> <td> <pre>"while"</pre> </td><td>        TokenWhilekw </td><td>   </td></tr>
+  <tr> <td> <pre>"public"</pre> </td><td>       TokenPublickw</td><td>   </td></tr>
+  <tr> <td> <pre>"return"</pre> </td><td>       TokenReturnkw </td><td>   </td></tr>
+  <tr> <td> <pre>"String"</pre> </td><td>       TokenStringkw </td><td>   </td></tr>
+  <tr> <td> <pre>"static"</pre> </td><td>       TokenStatickw </td><td>   </td></tr>
+  <tr> <td> <pre>"void"</pre> </td><td>         TokenVoidkw </td><td>   </td></tr>
+  <tr> <td> <pre>"this"</pre> </td><td>         TokenThiskw</td><td>   </td></tr>
+  <tr> <td> <pre>"class"</pre> </td><td>        TokenClasskw</td><td>   </td></tr>
+  <!--<tr> <td> <pre>"extends"</pre> </td><td>      TokenExtendskw</td><td>   </td></tr>-->
+  <tr> <td> <pre>"new"</pre> </td><td>          TokenNewkw</td><td>   </td></tr>
+  <tr> <td> <pre>"length"</pre> </td><td>       TokenLengthkw</td><td>   </td></tr>
+  <tr> <td> <pre>"import"</pre> </td><td>	TokenImportkw</td><td>   </td></tr>
+
+  <tr> <td colspan=3 align=center><b>Reserved Phrases</b></td></tr>
+
+  <tr> <td> <pre>"meggy.Meggy"</pre> </td><td>   TokenMeggyPkg</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.setPixel"</pre> </td><td> TokenMeggySetPixel</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.setAuxLEDs"</pre> </td><td> TokenMeggySetAUXLeds</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.toneStart"</pre> </td><td> TokenMeggyToneStart</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.delay"</pre> </td><td> TokenMeggyDelay</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.getPixel"</pre> </td><td> TokenMeggyGetPixel</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.checkButton"</pre> </td><td> TokenMeggyCheckButton</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.Color.DARK"</pre> </td><td> TokenColor</td><td>0</td></tr>
+  <tr> <td> <pre>"Meggy.Color.RED"</pre> </td><td> TokenColor</td><td>1</td></tr>
+  <tr> <td> <pre>"Meggy.Color.ORANGE"</pre> </td><td> TokenColor</td><td>2</td></tr>
+  <tr> <td> <pre>"Meggy.Color.YELLOW"</pre> </td><td> TokenColor</td><td>3</td></tr>
+  <tr> <td> <pre>"Meggy.Color.GREEN"</pre> </td><td> TokenColor</td><td>4</td></tr>
+  <tr> <td> <pre>"Meggy.Color.BLUE"</pre> </td><td> TokenColor</td><td>5</td></tr>
+  <tr> <td> <pre>"Meggy.Color.VIOLET"</pre> </td><td> TokenColor</td><td>6</td></tr>
+  <tr> <td> <pre>"Meggy.Color.WHITE"</pre> </td><td> TokenColor</td><td>7</td></tr>
+
+
+  <tr> <td> <pre>"Meggy.Button.B"</pre> </td><td> TokenButton</td><td>1</td></tr>
+  <tr> <td> <pre>"Meggy.Button.A"</pre> </td><td> TokenButton</td><td>2</td></tr>
+  <tr> <td> <pre>"Meggy.Button.Up"</pre> </td><td> TokenButton</td><td>4</td></tr>
+  <tr> <td> <pre>"Meggy.Button.Down"</pre> </td><td> TokenButton</td><td>8</td></tr>
+  <tr> <td> <pre>"Meggy.Button.Left"</pre> </td><td> TokenButton</td><td>16</td></tr>
+  <tr> <td> <pre>"Meggy.Button.Right"</pre> </td><td> TokenButton</td><td>32</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.C3"</pre></td><td>TokenTone</td><td>61157</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.Cs3"</pre></td><td>TokenTone</td><td>57724</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.D3"</pre></td><td>TokenTone</td><td>54485</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.Ds3"</pre></td><td>TokenTone</td><td>51427</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.E3"</pre></td><td>TokenTone</td><td>48541</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.F3"</pre></td><td>TokenTone</td><td>45816</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.Fs3"</pre></td><td>TokenTone</td><td>43243</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.G3"</pre></td><td>TokenTone</td><td>40816</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.Gs3"</pre></td><td>TokenTone</td><td>38526</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.A3"</pre></td><td>TokenTone</td><td>36363</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.As3"</pre></td><td>TokenTone</td><td>34323</td></tr>
+  <tr> <td> <pre>"Meggy.Tone.B3"</pre></td><td>TokenTone</td><td>32397</td></tr>
+  <tr> <td> <pre>"Meggy.Color"</pre></td><td>TokenMeggyColor</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.Button"</pre></td><td>TokenMeggyButton</td><td>   </td></tr>
+  <tr> <td> <pre>"Meggy.Tone"</pre></td><td>TokenMeggyTone</td><td>   </td></tr>
+</table>
+</center>
+
+<h2>Other tokens: </h2>
+<ul>
+<li>TokenInt: A string of decimal digits
+<li>TokenId: A letter or underscore followed by a string of letters, digits, or underscores
+<li>Comments: Support for C++ style comments (<code>//</code> followed by a
+	comment until the end of the line). And C style comments -- see <a
+href="http://ostermiller.org/findcomment.html">http://ostermiller.org/findcomment.html</a>
+</ul>
+
+</BODY>
+</HTML>
